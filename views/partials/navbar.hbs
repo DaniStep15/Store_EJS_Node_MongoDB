@@ -1,0 +1,27 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Notes</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isHome}}
+        <li class="active"><a href="/">Home</a></li>
+      {{else}}
+        <li><a href="/">Home</a></li>
+      {{/if}}
+
+      {{#if isNotes}}
+        <li class="active"><a href="/notes">Notes</a></li>
+      {{else}}
+        <li><a href="/notes">Notes</a></li>
+      {{/if}}
+
+      {{#if isAdd}}
+        <li class="active"><a href="/add">Add note</a></li>
+      {{else}}
+        <li><a href="/add">Add note</a></li>
+      {{/if}} 
+
+      
+    </ul>
+  </div>
+</nav>

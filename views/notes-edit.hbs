@@ -1,0 +1,18 @@
+<h1>Edit</h1>
+
+<form action="/notes/edit" method="POST" class="note-form">
+  <div class="input-field">
+    <input id="title" name="title" type="text" class="validate" required value="{{notes.title}}">
+    <label for="title">Note</label>
+    <span class="helper-text" data-error="Put text"></span>
+  </div>
+
+  <input type="hidden" name="id" value="{{notes.id}}">
+
+  <button type="submit" class="btn btn-primary">Save changes</button>
+</form>
+
+<form action="/notes/remove" method="POST">
+  <input type="hidden" name="id" value="{{ notes.id }}">
+  <button class="btn red">Remove note</button>
+</form>
